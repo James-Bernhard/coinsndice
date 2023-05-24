@@ -1,10 +1,29 @@
 Package: coinsndice
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Simulations of Statistical Inference via Coins and Dice
+Version: 1.0.0
 Authors@R: 
-    person("James", "Bernhard", , "jbernhard@projectivespace.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: GPL (>= 3)
+    person("James", "Bernhard", , "jbernhard@projectivespace.com", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0009-0001-0762-2035"))
+Description: Functions to simulate coins and dice, and to use these simulations to
+    show what happens when statistical inference is repeated many times. This helps the
+    user view p-values and the endpoints of confidence intervals as random variables.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
+Imports:
+    digest,
+    ggplot2,
+    methods
+Collate: 
+    'apply_inferers.R'
+    'front_ends.R'
+    'iterate_samplers.R'
+    'make_inferers.R'
+    'make_samplers.R'
+    'plot_inferences.R'
+    'summarize_inferences.R'
+    'utils.R'
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
