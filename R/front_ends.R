@@ -105,9 +105,8 @@ flip <- function(n=1, id="fair", N=1, confidence_level=NA, null_value=NA, true_v
   }
 
   if (show_plot){
-    print(output_plot)
+    output_plot
   }
-  invisible(output_plot)
 }
 
 #' Simulate die rolls followed by t means inference
@@ -212,7 +211,6 @@ roll <- function(n=1, id="fair", N=1, confidence_level=NA, null_value=NA, true_v
 
 
   if (show_plot){
-    print(output_plot)
+    output_plot
   }
-  invisible(output_plot)
 }

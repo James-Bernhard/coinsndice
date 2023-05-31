@@ -15,15 +15,6 @@ Imports:
     digest,
     ggplot2,
     methods
-Collate: 
-    'apply_inferers.R'
-    'front_ends.R'
-    'iterate_samplers.R'
-    'make_inferers.R'
-    'make_samplers.R'
-    'plot_inferences.R'
-    'summarize_inferences.R'
-    'utils.R'
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
